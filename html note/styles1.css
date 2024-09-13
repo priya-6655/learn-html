@@ -1,0 +1,33 @@
+#first-btn:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+#first-btn:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+#first-btn:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#first-btn:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#second-btn:link, #second-btn:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#second-btn:hover, #second-btn:active {
+  background-color: red;
+}
+

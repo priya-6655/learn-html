@@ -15,7 +15,7 @@
 		<script>
 		function displayDate()
 		{
-		document.getElementById("demo").innerHTML=August 28,2024;
+		document.getElementById("demo").innerHTML= new Date().toDateString() + ' - Welcome by Priya';
 		}
 		</script>
 		<p id="demo"></p>
@@ -31,42 +31,61 @@
 			<a id="second-btn" href="new 4.html" target="_blank">self treatment</a>
 	    </div>
 				<div style="float:right;padding:20px">
-				<button onclick="viewbtn()"style="cursor:pointer;display:inline-block;border-radius:30px;overflow:hidden;background-color:yellow;margin:30px;padding:5px">view Clinic Name</button>
+				<button onclick="viewbtn()"style="cursor:pointer;display:inline-block;border-radius:30px;overflow:hidden;background-color:yellow;margin:30px;padding:5px">View Clinic Name</button>
 				<span class="demo">Herbal clinic</span>
 				<button onclick="hidebtn()"style="cursor:pointer;display:inline-block;border-radius:30px;overflow:hidden;background-color:yellow;margin:30px;padding:5px">Hide Clinic Name</button>
-				<div style="text-align:center">
-				<span class="test">Sakthi Herbal Clinic</span>
-				<ul style="list-style-type:circle">
-				<li>address</li>
-				<li>Time to Open</li>
-				<li>Review</li>
-				<span class="test" >The Hair Clinic</span>
-				<ul style="list-style-type:circle">
-				<li>address</li>
-				<li>Time to Open</li>
-				<li>Review</li>
-				<span class="test">Raaj Herbal Clinic</span>
-				<ul style="list-style-type:circle">
-				<li>address</li>
-				<li>Time to Open</li>
-				<li>Review</li>
+				<div>
+					<span class="test">Sakthi Herbal Clinic</span>
+					<ul style="list-style-type:circle;">
+						<li>address</li>
+						<li>Time to Open</li>
+						<li>Review</li>
+					</ul>
+					<span class="test">The Hair Clinic</span>
+					<ul style="list-style-type:circle">
+						<li>address</li>
+						<li>Time to Open</li>
+						<li>Review</li>
+					</ul>
+					<span class="test">Raaj Herbal Clinic</span>
+					<ul style="list-style-type:circle">
+						<li>address</li>
+						<li>Time to Open</li>
+						<li>Review</li>
+					</ul>
 				</div>
 			<script>
 				function hidebtn(){
 				var x=document.getElementsByClassName("test");
-				for( var i=0;i<x.length;i++)
-					{
-						x[i].style.display="none";
+					for( var i=0;i<x.length;i++){
+							x[i].style.display="none";
+						}
 					}
-				}
 				function viewbtn(){
 				var x=document.getElementsByClassName("test");
-				for( var i=0;i>x.length;i++)
-				{
-				x[i].style.display="test";
+					for( var i=0;i<x.length;i++){
+						x[i].style.display="block";
+					}
 				}
-				}
+				// var i = 0; 0<3;0++{
+				// 	x[0].style.display = 'none';
+				// 	i=1
+				// }
+
+				// var i = 1; 1<3;1++{
+				// 	x[1].style.display = 'none';
+				// 	i=2
+				// }
+
+				// var i = 2; 2<3;2++{
+				// 	x[2].style.display = 'none';
+				// 	i=3
+				// }
 			
+				// var i = 3; 3<3;3++{
+				// 	x[1].style.display = 'none';
+				// 	i=2
+				// }
 				</script>
 
 			</div>

@@ -7,6 +7,9 @@
   background-color:hsl(170,50%,50%);
   padding:20px;
 }
+p{
+	text-transform:capitalize;
+}
 </style>
 <head>
      <title>Natural Remedies</title>
@@ -18,21 +21,20 @@
     <a href="http://www.aaraorganics.com"title="Go to the organic product"style="text-decoration:none"target="blank;">organic product</a>
     <p><img src="new2.jpg" alt="aara organic logo" width="250"height="160"></p> 
 	<script>
-	function clinic(medi){
-	var pic;
-	if(medi==0){
-	pic="https://www.vhv.rs/dpng/d/459-4593815_pic-bulboff-on-off-gif-hd-png-download.png"
-	}else
-	{
-	pic="https://i.gifer.com/origin/8e/8e6287d5a11f771990e19b66a66492fb_w200.gif"
-	}
-	document.getElementById('myimage').src=pic;
-	}
+		function clinic(status){
+			var pic;
+			if(status==0){
+				pic="https://www.vhv.rs/dpng/d/459-4593815_pic-bulboff-on-off-gif-hd-png-download.png"
+			}else {
+				pic="https://i.gifer.com/origin/8e/8e6287d5a11f771990e19b66a66492fb_w200.gif"
+			}
+			document.getElementById('myimage').src=pic;
+		}
 	</script>
 	<img id="myimage"src="https://as2.ftcdn.net/v2/jpg/00/77/99/99/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg"width="200"height="180">
 	<p>
-	<button type="button"onclick="clinic1">Shop Open</button>
-	<button type="button"onclick="clinic0">Shop Close</button>
+	<button type="button"onclick="clinic(1)">Shop Open</button>
+	<button type="button"onclick="clinic(0)">Shop Close</button>
 	</p>
     <h2 style='color:blue;text-align:center;'>skin care product retail price list</h2>
     <h3 style="background-color:pink;">s.no</h3>
